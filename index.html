@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Profile</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      color: #202124;
+      background: #f5f7fb;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2b6cb0, #38a169);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+    }
+
+    nav {
+      background: white;
+      border-bottom: 1px solid #dfe3ea;
+      padding: 14px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+    }
+
+    nav a {
+      color: #2b6cb0;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 14px;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 45px 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 18px;
+      color: #1f2937;
+    }
+
+    .intro {
+      background: white;
+      border-radius: 8px;
+      padding: 28px;
+      box-shadow: 0 8px 22px rgba(32, 33, 36, 0.08);
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .profile-card {
+      background: white;
+      border-radius: 8px;
+      padding: 24px;
+      box-shadow: 0 8px 22px rgba(32, 33, 36, 0.08);
+    }
+
+    .photo {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      background: #dbeafe;
+      color: #1d4ed8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 42px;
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    .profile-card h3 {
+      font-size: 24px;
+      margin-bottom: 8px;
+      color: #111827;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #ecfdf5;
+      color: #047857;
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      margin-top: 12px;
+      padding-left: 20px;
+    }
+
+    .hobby-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .hobby-list li {
+      background: white;
+      border-radius: 8px;
+      padding: 18px;
+      text-align: center;
+      box-shadow: 0 8px 22px rgba(32, 33, 36, 0.08);
+    }
+
+    .contact {
+      background: #111827;
+      color: white;
+      text-align: center;
+      border-radius: 8px;
+      padding: 35px 20px;
+    }
+
+    .contact a {
+      color: #93c5fd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 22px;
+      color: #6b7280;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 10px;
+      }
+
+      .profile-grid,
+      .hobby-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hello, We Are Friends</h1>
+    <p>A simple website to introduce our profiles, interests, and contact information.</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#profiles">Profiles</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="intro">
+      <h2>About This Website</h2>
+      <p>
+        Welcome to our profile website. This page introduces two friends, our basic
+        information, hobbies, goals, and ways to contact us. You can edit this file
+        in Visual Studio Code and replace the sample text with your real information.
+      </p>
+    </div>
+  </section>
+
+  <section id="profiles">
+    <h2>Our Profiles</h2>
+    <div class="profile-grid">
+      <div class="profile-card">
+        <div class="photo">Me</div>
+        <h3>Your Name</h3>
+        <span class="tag">Student</span>
+        <p>
+          Hi, my name is Your Name. I enjoy learning technology, building websites,
+          and improving my English and computer skills.
+        </p>
+        <ul>
+          <li>Age: 18</li>
+          <li>School: Your School Name</li>
+          <li>Favorite subject: Information Technology</li>
+        </ul>
+      </div>
+
+      <div class="profile-card">
+        <div class="photo">Fr</div>
+        <h3>Friend's Name</h3>
+        <span class="tag">Best Friend</span>
+        <p>
+          This is my friend. My friend is friendly, hardworking, and always ready
+          to help others. We like learning and doing creative projects together.
+        </p>
+        <ul>
+          <li>Age: 18</li>
+          <li>School: Friend's School Name</li>
+          <li>Favorite subject: English</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="hobbies">
+    <h2>Our Hobbies</h2>
+    <ul class="hobby-list">
+      <li>Listening to music</li>
+      <li>Playing sports</li>
+      <li>Learning HTML</li>
+      <li>Watching movies</li>
+      <li>Taking photos</li>
+      <li>Traveling</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <div class="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+      <p>Phone: 0123 456 789</p>
+      <p>Address: Your City, Your Country</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Our Profile Website. Made with HTML and CSS.</p>
+  </footer>
+</body>
+</html>
